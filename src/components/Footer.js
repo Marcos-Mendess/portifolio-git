@@ -6,6 +6,7 @@ import instagram_logo from "../assets/icons/instagram_logo.png";
 import linkedin_logo from "../assets/icons/linkedin_logo.png";
 import git_logo from "../assets/icons/git_logo.png";
 import mail_logo from "../assets/icons/mail_logo.png";
+import whatsapp_logo from "../assets/icons/whatsapp_logo.png";
 
 const FooterStyles = styled.footer`
   margin-top: 4rem;
@@ -76,7 +77,7 @@ function Footer() {
               {
                 title: "(81) 99833-7386",
                 path: "/contacts",
-                img: instagram_logo,
+                img: whatsapp_logo,
               },
               {
                 title: "marcos_fmendes@hotmail.com",
