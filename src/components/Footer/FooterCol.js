@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import instagram_logo from "../assets/icons/instagram_logo.png";
+import instagram_logo from "../../assets/icons/instagram_logo.png";
 
 const ColStyle = styled.div`
   padding-bottom: 1rem;

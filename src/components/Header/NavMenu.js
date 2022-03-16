@@ -57,6 +57,7 @@ const NavMenuStyles = styled.header`
       display: block;
     }
     .navItems {
+      z-index: 1;
       --top: 1rem;
       transition: 0.3s ease transform;
       background-color: var(--deep-dark);
@@ -90,32 +91,22 @@ function NavMenu() {
     setShowNav(!showNav);
   };
   return (
-    <NavMenuStyles>
-      <div
-        className="mobile-menu-icon"
-        onClick={showTheNav}
-        onKeyDown={showTheNav}
-        tabIndex={0}
-      >
+    <NavMenuStyles style={{ "padding-bottom": "3rem" }}>
+      <div className="mobile-menu-icon" onClick={showTheNav} tabIndex={0}>
         <MdMenu />
       </div>
       <ul className={!showNav ? "navItems hide-item" : "navItems"}>
-        <div
-          className="closeNavIcon"
-          onClick={showTheNav}
-          onKeyDown={showTheNav}
-          tabIndex={0}
-        >
+        <div className="closeNavIcon" onClick={showTheNav} tabIndex={0}>
           <MdClose />
         </div>
-        <li onClick={showTheNav} onKeyDown={showTheNav} tabIndex={0}>
-          <NavLink to="/">Home</NavLink>
+        <li onClick={showTheNav} tabIndex={0}>
+          <NavLink to="/">Início</NavLink>
         </li>
-        <li onClick={showTheNav} onKeyDown={showTheNav} tabIndex={0}>
-          <NavLink to="/projects">Projects</NavLink>
+        <li onClick={showTheNav} tabIndex={0}>
+          <NavLink to="/projetos">Projetos</NavLink>
         </li>
-        <li onClick={showTheNav} onKeyDown={showTheNav} tabIndex={0}>
-          <NavLink to="/contact">Contact</NavLink>
+        <li onClick={showTheNav} tabIndex={0}>
+          <NavLink to="/contato">Contato</NavLink>
         </li>
       </ul>
     </NavMenuStyles>

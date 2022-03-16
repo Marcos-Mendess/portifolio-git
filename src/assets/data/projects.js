@@ -1,19 +1,17 @@
-import { v4 as uuidv4 } from "uuid";
 import UTrackerImg from "../images/utracker.jpg";
-import GreenCtgImg from "../images/greenctg.jpg";
+import Dog from "../images/dog.jpg";
 
 const projects = [
   {
-    id: uuidv4(),
-    name: "U Tracker",
-    desc: "An application to track your all data from one place. I developed the website and the mobile app",
+    name: "Tractian Project",
+    desc: "Aplicação que mostra todos os dados e ações possíveis  criados no back-end para o usuário, utilizando React e Highcharts.",
+
     img: UTrackerImg,
   },
   {
-    id: uuidv4(),
-    name: "Green CTG",
-    desc: "An app to help people to get an overview of how they can make the city beautiful.",
-    img: GreenCtgImg,
+    name: "Project Dogs",
+    desc: "Aplicação responsável pela criação de uma rede social de fotos de cachorros utilizando React, Regex, JavaScript e CSS.",
+    img: Dog,
   },
 ];
 

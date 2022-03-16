@@ -1,10 +1,8 @@
 import React from "react";
-import Footer from "../components/Footer";
 import PText from "../components/PText";
-import AboutImg from "../assets/images/MarcosImg.jpg";
+import AboutImg from "../assets/images/Background.png";
 import styled from "styled-components";
-
-import DownloadButton from "../components/DownloadButton";
+import DownloadButton from "../components/Home/DownloadButton";
 
 const AboutPageStyles = styled.div`
   padding: 6rem 0 10rem 0;
@@ -38,8 +36,8 @@ const AboutPageStyles = styled.div`
   .right {
     img {
       border: 2px solid var(--gray-1);
-      width: 78%;
-      border-radius: 5rem;
+      width: 70%;
+      border-radius: 1rem;
     }
   }
   @media only screen and (max-width: 768px) {
@@ -54,12 +52,21 @@ const AboutPageStyles = styled.div`
     .about_heading {
       font-size: 2.8rem;
     }
+    img {
+      justify-content: left;
+    }
   }
 `;
 
 function Home() {
   return (
-    <AboutPageStyles style={{ margin: 0, padding: 0 }}>
+    <AboutPageStyles
+      style={{
+        "margin-top": "1rem",
+        "padding-top": "2rem",
+        "padding-bottom": "10rem",
+      }}
+    >
       <div className="container">
         <div className="top-section">
           <div className="left">
@@ -67,21 +74,22 @@ function Home() {
             <h2 className="about_heading">Front-end Web developer</h2>
             <div className="about_info">
               <PText>
-                I am from Recife, Pernambuco. A place of beauty and nature.
-                Since my childhood, i love art and design. I always try to
-                design stuff with my unique point of view. I also love to create
-                things that can be usefull to others.
+                Natural de Recife, Pernambuco, um local conhecido por suas
+                praias e carnavais. Desde a minha infância sempre fui
+                interessado em tecnologia, adoro criar coisas que podem ser
+                úteis de verdade para os outros.
                 <br /> <br />
-                I started coding since I was in high school. Coding is also an
-                art for me. I love it and now I have the opportunity to design
-                along with the coding. I find it really interesting and I
-                enjoyed the process a lot.
+                Comecei no ambiente de desenvolvimento a partir de jogos, sempre
+                achei interessante automatizar algumas funções repetitivas e o
+                processo sempre foi desafiador e satisfatório.
                 <br />
                 <br />
-                My vision is to make the world a better place. Now almost
-                everything is becoming better than ever. It is time for us to
-                create more good stuff that helps the world to become a better
-                place.
+                Tenho a visão de transformar o mundo em um local melhor,
+                acredito que a tecnologia pode transformar vidas.
+                <br />
+                <br />
+                Curiosidades: Gamer nas horas vagas e atleta da maioria dos
+                esportes que envolvam a redonda.
               </PText>
             </div>
             <DownloadButton btnText="Download CV" btnLink="#" />
@@ -91,7 +99,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </AboutPageStyles>
   );
 }

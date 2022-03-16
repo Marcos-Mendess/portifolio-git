@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import curriculo from "../assets/Curriculo/curriculo.pdf";
+import curriculo from "../../assets/Curriculo/curriculo.pdf";
 const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
