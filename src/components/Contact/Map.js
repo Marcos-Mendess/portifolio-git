@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MapImg from "../../assets/images/foto_mapa.png";
+import MapImg from "../../assets/images/mapa_red.png";
 import PText from "../PText";
 
 const MapStyles = styled.div`

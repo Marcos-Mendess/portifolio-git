@@ -81,7 +81,7 @@ function Footer() {
             links={[
               {
                 title: "(81) 99833-7386",
-                path: "/contacts",
+                path: "/contato",
                 img: whatsapp_logo,
               },
               {
