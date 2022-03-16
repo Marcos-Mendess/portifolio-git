@@ -1,5 +1,5 @@
 # Marcos Mendes Portfolio website [React Project]
 ## Project Details
 
-I used React js to make this portfolio. A clean design with full responsiveness. You will find this portfolio very professional. :smile:
+Foi utilizado React js para este portfólio. Design limpo e responsivo. :smile:
 
