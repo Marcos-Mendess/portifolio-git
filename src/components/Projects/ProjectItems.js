@@ -43,13 +43,13 @@ function ProjectItem({
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem_img">
+      <a href="https://app-dogss.netlify.app/login" className="projectItem_img">
         <img src={img} alt="project img" />
-      </Link>
+      </a>
       <div className="projectItem_info">
-        <a href="https://app-dogss.netlify.app/login">
+        <Link to="#">
           <h3 className="projectItem_title">{title}</h3>
-        </a>
+        </Link>
         <p className="projectItem_desc">{desc}</p>
       </div>
     </ProjectItemStyles>
