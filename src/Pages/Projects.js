@@ -88,6 +88,7 @@ function Projects() {
               title={item.name}
               desc={item.desc}
               img={item.img}
+              href={item.href}
             />
           ))}
         </div>

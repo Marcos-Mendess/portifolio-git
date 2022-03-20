@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import ProjectImg from "../../assets/images/utracker.jpg";
 
@@ -40,16 +39,22 @@ function ProjectItem({
   img = ProjectImg,
   title = "Project Name",
   desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  href = "",
 }) {
   return (
     <ProjectItemStyles>
-      <a href="https://app-dogss.netlify.app/login" className="projectItem_img">
+      <a
+        href={href}
+        className="projectItem_img"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src={img} alt="project img" />
       </a>
       <div className="projectItem_info">
-        <Link to="#">
+        <a href={href} target="_blank" rel="noreferrer">
           <h3 className="projectItem_title">{title}</h3>
-        </Link>
+        </a>
         <p className="projectItem_desc">{desc}</p>
       </div>
     </ProjectItemStyles>
