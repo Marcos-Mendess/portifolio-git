@@ -103,7 +103,7 @@ function Footer() {
             links={[
               {
                 title: "Linkedin",
-                path: "https://www.linkedin.com/in/marcos-vin%C3%ADcius-farias-mendes-684b3816a/",
+                path: "https://www.linkedin.com/in/marcos-mendes-684b3816a/",
                 img: linkedin_logo,
               },
               {
